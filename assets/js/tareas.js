@@ -1,4 +1,22 @@
-let tareas = []
+let tareas = []   
+tareas.push({
+        id : tareas.length + 1,
+        descripcion: 'Hacer Mercado',
+        checked: true
+    })
+
+tareas.push({
+        id : tareas.length + 1,
+        descripcion: 'Estudiar para la prueba',
+        checked: false
+    })
+tareas.push({
+        id : tareas.length + 1,
+        descripcion: 'Sacar a pasear a Tobby',
+        checked: false
+    })
+totales()
+tabla()
 
 function agregar(){
     console.log('agregar tarea')
@@ -51,7 +69,7 @@ function totales(){
         }
     })
     let totales =   `<p>Total: <strong>${total_tareas}</strong></p>` +
-                    `<p>Total: <strong>${total_realizadas}</strong></p>`
+                    `<p>Realizadas: <strong>${total_realizadas}</strong></p>`
     const section_totales = document.querySelector('#totales')
     section_totales.innerHTML = totales
 
