@@ -59,11 +59,13 @@ function totales(){
 
 function tabla(){
     console.log('crear tabla')
-    let tabla = `<table>` +
-                    `<tr>` +
-                        `<th>ID</th>` +
-                        `<th>TAREA</th>` +
-                    `</tr>`
+    let tabla = `<table class="table">` +
+                    `<thead>` +
+                        `<tr>` +
+                            `<th>ID</th>` +
+                            `<th>TAREA</th>` +
+                        `</tr>`+
+                    `</thead>`
     /* RECORRER TAREAS*/
     tareas.forEach(function(tarea, index) {
         const fila =
